@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your Account — SnapSolve AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6FB;
+    --surface:#FFFFFF;
+    --ink:#14162B;
+    --muted:#5B5F7A;
+    --indigo:#4F3FF0;
+    --indigo-deep:#3A2ED1;
+    --sky:#2FB0E8;
+    --line:#E3E4F0;
+    --tint:#EFECFF;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,.wordmark{font-family:'Manrope',system-ui,sans-serif;letter-spacing:-0.01em;}
+  a{color:var(--indigo-deep);}
+  .wrap{max-width:680px;margin:0 auto;padding:0 24px;}
+
+  header.top{padding:56px 0 8px;}
+  .brand{display:flex;align-items:center;gap:14px;margin-bottom:36px;}
+  .mark{
+    width:44px;height:44px;border-radius:13px;
+    background:linear-gradient(135deg,var(--sky),var(--indigo));
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .mark svg{width:24px;height:24px;}
+  .wordmark{font-size:19px;font-weight:800;color:var(--ink);}
+
+  h1{font-size:clamp(30px,5vw,40px);font-weight:800;margin:0 0 10px;}
+  .meta-line{color:var(--muted);font-size:15px;margin:0 0 32px;}
+
+  main{padding:12px 0 90px;}
+  .step-card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:26px 26px 28px;margin-bottom:18px;
+    display:grid;grid-template-columns:36px 1fr;gap:16px;
+  }
+  .step-num{
+    width:32px;height:32px;border-radius:50%;
+    background:var(--tint);color:var(--indigo-deep);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:14px;
+  }
+  .step-card h2{font-size:17px;font-weight:700;margin:2px 0 8px;}
+  .step-card p{margin:0 0 10px;color:#2B2D45;}
+  .step-card p:last-child{margin-bottom:0;}
+
+  .mailbtn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--indigo);color:white;text-decoration:none;
+    padding:11px 20px;border-radius:12px;font-weight:600;font-size:14.5px;
+    margin-top:4px;
+  }
+  .mailbtn:hover{background:var(--indigo-deep);}
+
+  .what-happens{
+    background:var(--tint);border:1px solid #E2DBFF;border-radius:16px;
+    padding:22px 24px;margin:26px 0;
+  }
+  .what-happens h2{font-size:16px;margin:0 0 12px;}
+  .what-happens ul{margin:0;padding-left:20px;}
+  .what-happens li{margin-bottom:8px;color:#2B2D45;font-size:14.5px;}
+
+  .timing{color:var(--muted);font-size:14px;margin-top:8px;}
+
+  footer{border-top:1px solid var(--line);padding:30px 0 60px;color:var(--muted);font-size:13.5px;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 8V5.5C4 4.67 4.67 4 5.5 4H8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M16 4H18.5C19.33 4 20 4.67 20 5.5V8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 16V18.5C20 19.33 19.33 20 18.5 20H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M8 20H5.5C4.67 20 4 19.33 4 18.5V16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="2.4" fill="white"/>
+        </svg>
+      </div>
+      <span class="wordmark">SnapSolve AI</span>
+    </div>
+    <h1>Delete Your Account</h1>
+    <p class="meta-line">How to permanently delete your SnapSolve AI account and data.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="step-card">
+    <div class="step-num">1</div>
+    <div>
+      <h2>Email us from the address on your account</h2>
+      <p>Send a deletion request from the same email address you used to sign up (or the Google account you used to sign in), so we can confirm it's really you.</p>
+      <a class="mailbtn" href="mailto:fahadulrahmanyasir@gmail.com?subject=Delete%20my%20SnapSolve%20AI%20account">✉️ fahadulrahmanyasir@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num">2</div>
+    <div>
+      <h2>Tell us it's a deletion request</h2>
+      <p>A short message is enough — for example: <em>"Please delete my SnapSolve AI account and all associated data."</em> Include the email address your account is registered under if it's different from your sending address.</p>
+    </div>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num">3</div>
+    <div>
+      <h2>We confirm once it's done</h2>
+      <p>We'll reply to confirm your account and data have been deleted. This is currently handled manually, so please allow a few days.</p>
+      <p class="timing">Typical turnaround: within 7 days.</p>
+    </div>
+  </div>
+
+  <div class="what-happens">
+    <h2>What gets deleted</h2>
+    <ul>
+      <li>Your account profile and sign-in credentials</li>
+      <li>Your scan history and uploaded homework photos</li>
+      <li>Your daily scan quota and usage records</li>
+    </ul>
+    <h2 style="margin-top:18px;">What may be kept</h2>
+    <ul>
+      <li>Records we're required to retain for legal, security, or fraud-prevention purposes, for a limited additional period</li>
+    </ul>
+  </div>
+
+  <p style="color:var(--muted);font-size:14px;">For more on how we handle your data, see our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 SnapSolve AI. This page applies to the SnapSolve AI Android application.</div>
+</footer>
+
+</body>
+</html>
