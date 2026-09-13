@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — SnapSolve AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6FB;
+    --surface:#FFFFFF;
+    --ink:#14162B;
+    --muted:#5B5F7A;
+    --indigo:#4F3FF0;
+    --indigo-deep:#3A2ED1;
+    --sky:#2FB0E8;
+    --line:#E3E4F0;
+    --tint:#EFECFF;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.wordmark{
+    font-family:'Manrope',system-ui,sans-serif;
+    letter-spacing:-0.01em;
+  }
+  a{color:var(--indigo-deep);}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- Header ---------- */
+  header.top{padding:56px 0 32px;}
+  .brand{display:flex;align-items:center;gap:14px;margin-bottom:36px;}
+  .mark{
+    width:44px;height:44px;border-radius:13px;
+    background:linear-gradient(135deg,var(--sky),var(--indigo));
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .mark svg{width:24px;height:24px;}
+  .wordmark{font-size:19px;font-weight:800;color:var(--ink);}
+
+  h1{font-size:clamp(32px,5vw,44px);font-weight:800;margin:0 0 10px;}
+  .meta-line{color:var(--muted);font-size:15px;margin:0 0 28px;}
+
+  .summary-row{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+    margin-top:8px;
+  }
+  .summary-card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:20px 20px 22px;
+  }
+  .summary-card .n{font-size:22px;margin-bottom:10px;display:block;}
+  .summary-card p{margin:0;font-size:14.5px;color:var(--muted);}
+  .summary-card strong{color:var(--ink);font-weight:600;}
+
+  /* ---------- Layout: nav + content ---------- */
+  main{padding:44px 0 90px;}
+  .layout{display:grid;grid-template-columns:220px 1fr;gap:56px;align-items:start;}
+  nav.toc{position:sticky;top:32px;}
+  nav.toc p.label{
+    font-size:12.5px;font-weight:600;color:var(--muted);
+    margin:0 0 14px;
+  }
+  nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;}
+  nav.toc a{
+    display:block;color:var(--muted);text-decoration:none;
+    font-size:14px;padding:7px 0 7px 14px;border-left:2px solid var(--line);
+    transition:color .15s, border-color .15s;
+  }
+  nav.toc a:hover{color:var(--ink);border-color:var(--indigo);}
+
+  .doc section{margin-bottom:46px;scroll-margin-top:24px;}
+  .doc h2{font-size:22px;font-weight:700;margin:0 0 16px;}
+  .doc h3{font-size:16.5px;font-weight:700;margin:22px 0 8px;color:var(--ink);}
+  .doc p{margin:0 0 14px;max-width:66ch;color:#2B2D45;}
+  .doc ul{margin:0 0 14px;padding-left:20px;max-width:64ch;}
+  .doc li{margin-bottom:7px;color:#2B2D45;}
+
+  .service-list{
+    display:flex;flex-direction:column;gap:10px;margin:18px 0 20px;
+    max-width:72ch;
+  }
+  .service{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:14px;padding:14px 18px;
+    display:grid;grid-template-columns:170px 1fr;gap:16px;
+    font-size:14.5px;
+  }
+  .service .who{font-weight:600;color:var(--ink);}
+  .service .what{color:var(--muted);}
+
+  .callout{
+    background:var(--tint);border-radius:16px;
+    padding:20px 24px;max-width:66ch;margin:0 0 14px;
+    border:1px solid #E2DBFF;
+  }
+  .callout p{margin:0;color:#2B2D45;}
+
+  footer{border-top:1px solid var(--line);padding:34px 0 60px;color:var(--muted);font-size:13.5px;}
+
+  /* mobile */
+  .toc-toggle{display:none;}
+  @media (max-width:880px){
+    .layout{grid-template-columns:1fr;gap:0;}
+    nav.toc{position:static;background:var(--surface);border:1px solid var(--line);
+      border-radius:14px;padding:6px 18px;margin-bottom:8px;}
+    .toc-toggle{display:block;padding:12px 0;font-weight:600;font-size:14px;cursor:pointer;color:var(--ink);}
+    nav.toc ol{display:none;padding-bottom:10px;}
+    nav.toc[open] ol{display:flex;}
+    .summary-row{grid-template-columns:1fr;}
+    .service{grid-template-columns:1fr;gap:4px;}
+  }
+
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 8V5.5C4 4.67 4.67 4 5.5 4H8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M16 4H18.5C19.33 4 20 4.67 20 5.5V8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 16V18.5C20 19.33 19.33 20 18.5 20H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M8 20H5.5C4.67 20 4 19.33 4 18.5V16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="2.4" fill="white"/>
+        </svg>
+      </div>
+      <span class="wordmark">SnapSolve AI</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="meta-line">Last updated: September 2026 · Applies to the SnapSolve AI Android app</p>
+
+    <div class="summary-row">
+      <div class="summary-card">
+        <span class="n">📸</span>
+        <p><strong>Your scans are processed to give you answers.</strong> Photos you capture are sent for AI analysis and kept in your account so you can revisit past scans.</p>
+      </div>
+      <div class="summary-card">
+        <span class="n">🚫</span>
+        <p><strong>We don't sell your data.</strong> Information is used to run the app and is shared only with the services described below.</p>
+      </div>
+      <div class="summary-card">
+        <span class="n">🗑️</span>
+        <p><strong>You're in control.</strong> You can delete your account and stored data from within the app at any time.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="layout">
+    <nav class="toc" id="toc">
+      <div class="toc-toggle" onclick="document.getElementById('toc').toggleAttribute('open')">On this page ▾</div>
+      <p class="label">ON THIS PAGE</p>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#collect">Information we collect</a></li>
+        <li><a href="#use">How we use it</a></li>
+        <li><a href="#third-parties">Services we rely on</a></li>
+        <li><a href="#retention">Storage &amp; retention</a></li>
+        <li><a href="#children">Children's use</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#changes">Policy changes</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <div class="doc">
+
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>SnapSolve AI ("the app", "we", "us") helps students scan homework and questions to get AI-generated answers and explanations, across subjects like math, physics, chemistry, and more. This policy explains what information the app collects, why, and how it's handled.</p>
+        <p>By creating an account or using the app, you agree to the practices described here. If you don't agree, please don't use the app.</p>
+      </section>
+
+      <section id="collect">
+        <h2>Information we collect</h2>
+
+        <h3>Account information</h3>
+        <p>To use the app you create an account with an email address and password, or sign in with your Google account. If you use Google Sign-In, we receive the name, email address, and profile photo associated with that account.</p>
+
+        <h3>Homework photos and scans</h3>
+        <p>When you scan a question, the photo you capture or upload is sent to our server so it can be analyzed and answered, and a copy is stored in your account so you can view your scan history later. Chat messages you send to the AI Chat feature are handled the same way.</p>
+
+        <h3>Usage and quota data</h3>
+        <p>We keep a record of how many scans you've used each day, tied to your account, so your daily free-scan limit works correctly even if you reinstall the app.</p>
+
+        <h3>Device and security signals</h3>
+        <p>The app uses Google Play Integrity to confirm requests are coming from a genuine, unmodified copy of the app running on a genuine device. This produces a signed attestation token; it does not identify you personally.</p>
+
+        <h3>Advertising data</h3>
+        <p>The app is built to show ads through Google AdMob. When ads are active, AdMob may collect an advertising identifier and ad-interaction data to show and measure ads, as described in Google's own privacy policy.</p>
+      </section>
+
+      <section id="use">
+        <h2>How we use it</h2>
+        <ul>
+          <li>To create and secure your account, and let you sign back in on any device</li>
+          <li>To analyze your scans and chat messages and return an answer</li>
+          <li>To keep your scan history available to you</li>
+          <li>To enforce daily free-scan limits fairly</li>
+          <li>To detect abuse, fraud, and requests that don't come from the real app</li>
+          <li>To send you account-related emails — verifying your email address and resetting your password</li>
+          <li>To show and measure ads, once ads are enabled</li>
+        </ul>
+      </section>
+
+      <section id="third-parties">
+        <h2>Services we rely on</h2>
+        <p>We don't build our own servers for most of this — we rely on established providers, each handling a specific job:</p>
+        <div class="service-list">
+          <div class="service">
+            <div class="who">Google Firebase</div>
+            <div class="what">Account sign-in, storing your profile and scan history, and daily quota tracking.</div>
+          </div>
+          <div class="service">
+            <div class="who">Google Gemini AI</div>
+            <div class="what">Analyzes the photos and questions you submit and generates the answers and explanations you see. Requests are routed through our own server, which does not store your Gemini API usage separately from your scan history above.</div>
+          </div>
+          <div class="service">
+            <div class="who">Google Play Integrity</div>
+            <div class="what">Confirms the app instance making a request is genuine, to keep the service secure for everyone.</div>
+          </div>
+          <div class="service">
+            <div class="who">Resend</div>
+            <div class="what">Delivers the verification and password-reset emails the app sends you.</div>
+          </div>
+          <div class="service">
+            <div class="who">Google AdMob</div>
+            <div class="what">Shows in-app advertising, once enabled, and measures ad performance.</div>
+          </div>
+        </div>
+        <p>Each of these providers processes data under its own privacy policy in addition to this one.</p>
+      </section>
+
+      <section id="retention">
+        <h2>Storage and retention</h2>
+        <p>Your account details, scan history, and usage data are kept for as long as your account is active, so your history and quota stay consistent across reinstalls and devices. If you delete your account, this data is removed from our systems within a reasonable period, except where we're required to keep it for legal or security reasons.</p>
+      </section>
+
+      <section id="children">
+        <h2>Children's use of this app</h2>
+        <p>SnapSolve AI is a homework-help tool and may be used by students, including those under 13, generally under the guidance of a parent, guardian, or teacher. We don't knowingly collect more information from a child than is needed to provide the app's core features described above, and we don't use children's information for targeted advertising.</p>
+        <p>If you're a parent or guardian and believe your child has provided us with information beyond what's needed to use the app, please contact us using the details below and we'll address it.</p>
+      </section>
+
+      <section id="security">
+        <h2>Security</h2>
+        <p>Your data is stored using Google Firebase's security infrastructure, with access rules that restrict each account to its own data. Traffic between the app and our servers is encrypted in transit. No system is perfectly secure, but we take reasonable, industry-standard steps to protect your information.</p>
+      </section>
+
+      <section id="choices">
+        <h2>Your choices</h2>
+        <ul>
+          <li><strong>Delete your account:</strong> available from Settings inside the app, which removes your profile, scan history, and quota data.</li>
+          <li><strong>Reset your password:</strong> available from the sign-in screen at any time.</li>
+          <li><strong>Camera and photo access:</strong> controlled from your device's app permission settings; the app will simply be unable to scan without it.</li>
+          <li><strong>Advertising identifier:</strong> can be reset or limited from your Android device's ad settings.</li>
+        </ul>
+      </section>
+
+      <section id="changes">
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy as the app changes — for example, when a new feature starts using a new type of data. We'll update the "Last updated" date above when we do. Continuing to use the app after a change means you accept the updated policy.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact us</h2>
+        <div class="callout">
+          <p>Questions about this policy or your data? Reach us at <a href="mailto:fahadulrahmanyasir@gmail.com">fahadulrahmanyasir@gmail.com</a>.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 SnapSolve AI. This policy applies to the SnapSolve AI Android application.</div>
+</footer>
+
+</body>
+</html>
